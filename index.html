@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bethelhem Tamirat — Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<link rel="stylesheet" href="css/styles.css">
+<script src="js/script.js" defer></script>
+</head>
+<body>
+
+  <div id="intro-screen">
+    <div class="intro-content">
+      <h1 class="intro-title">Welcome to Bethelhem's Portfolio</h1>
+    </div>
+  </div>
+<!-- NAV -->
+<nav>
+  <a href="#home" class="logo">Behtty <span>Tamrat</span></a>
+
+  <!-- Dark overlay when menu is open -->
+  <div class="nav-overlay" id="navOverlay"></div>
+
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+  </ul>
+
+  <!-- Hamburger / Cancel button -->
+  <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="home">
+  <div class="hero-bg-image"></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-bg"></div>
+  <div class="grid-bg"></div>
+  <div class="hero-content">
+    <div class="hero-tag">Available for work</div>
+    <h1>Hey, I'm<br><span class="pink">Bethelhem</span></h1>
+    <div class="hero-role"><span> Web designer And Developer</span></div>
+    
+    <div class="hero-btns">
+      <a href="#projects" class="btn-primary">View My Work</a>
+      <a href="#contact" class="btn-outline">Hire Me</a>
+    </div>
+    <div class="hero-stats">
+      <div>
+        <div class="stat-num" data-count="3">0</div>
+        <div class="stat-label">Projects Built</div>
+      </div>
+      <div>
+        <div class="stat-num" data-count="6">0</div>
+        <div class="stat-label">Core Skills</div>
+      </div>
+      <div>
+        <div class="stat-num">∞</div>
+        <div class="stat-label">Passion for Code</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="reveal">
+    <span class="section-label">Who I Am</span>
+    <h2 class="section-title">About Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="about-grid">
+    <div class="about-text reveal">
+      <p>I'm <strong>Bethelhem Tamirat</strong>, a Frontend Web Developer focused on designing clean, responsive, and user-friendly websites. I enjoy turning ideas into polished digital experiences, combining strong attention to detail with a genuine passion for building well-crafted interfaces.</p>
+      <p>Currently <strong>open to new opportunities</strong> and collaborations, I bring reliability, curiosity, and a commitment to quality in every project.</p>
+      <div class="about-tags">
+        <span class="tag">Problem Solver</span>
+        <span class="tag">Detail Oriented</span>
+        <span class="tag">Fast Learner</span>
+        <span class="tag">Creative Thinker</span>
+        <span class="tag">Open to Work</span>
+      </div>
+    </div>
+    <div class="about-card reveal">
+      <div class="about-card-title">Personal Info</div>
+      <div class="info-row"><span class="info-label">Name</span><span class="info-value">Bethelhem Tamirat</span></div>
+      <div class="info-row"><span class="info-label">Role</span><span class="info-value pink">Frontend Developer</span></div>
+      <div class="info-row"><span class="info-label">Speciality</span><span class="info-value">Web Design &amp; Development</span></div>
+      <div class="info-row"><span class="info-label">Status</span><span class="info-value pink">Available for Hire ✓</span></div>
+      <div class="info-row"><span class="info-label">Language</span><span class="info-value">English · Amharic</span></div>
+      <div class="info-row"><span class="info-label">Goal</span><span class="info-value">Build amazing websites</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="reveal">
+    <span class="section-label">What I Know</span>
+    <h2 class="section-title">My Skills</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="skills-grid">
+    <div class="skill-card reveal">
+      <div class="skill-icon">🌐</div>
+      <div class="skill-name">Web Designing</div>
+      <div class="skill-desc">Structuring clean, semantic, and accessible web pages that are well organized and search-friendly.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="90"></div></div>
+      <div class="skill-pct">90%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🎨</div>
+      <div class="skill-name">Styling &amp; Layout</div>
+      <div class="skill-desc">Crafting modern layouts, smooth animations, and polished visual styling for a refined look and feel.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="85"></div></div>
+      <div class="skill-pct">85%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">⚡</div>
+      <div class="skill-name">Interactive Development</div>
+      <div class="skill-desc">Building dynamic, interactive features, form validation, and engaging user interactions.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="75"></div></div>
+      <div class="skill-pct">75%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">✏️</div>
+      <div class="skill-name">UI Design</div>
+      <div class="skill-desc">Designing clean, modern interfaces with great visual hierarchy, color theory, and user experience in mind.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="80"></div></div>
+      <div class="skill-pct">80%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">📱</div>
+      <div class="skill-name">Responsive Design</div>
+      <div class="skill-desc">Building websites that look and work perfectly on all screen sizes — mobile, tablet, and desktop.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="85"></div></div>
+      <div class="skill-pct">85%</div>
+    </div>
+    <div class="skill-card reveal">
+      <div class="skill-icon">🛠️</div>
+      <div class="skill-name">Development Tools</div>
+      <div class="skill-desc">Comfortable with version control and modern development tools to write cleaner, more efficient code.</div>
+      <div class="skill-bar-bg"><div class="skill-bar" data-width="70"></div></div>
+      <div class="skill-pct">70%</div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="reveal">
+    <span class="section-label">What I Built</span>
+    <h2 class="section-title">My Projects</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="projects-grid">
+    <div class="project-card reveal">
+      <div class="project-thumb p-c1">🛍️</div>
+      <div class="project-body">
+        <span class="project-status completed">Completed</span>
+        <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+        <div class="project-title">E-Commerce Landing Page</div>
+        <div class="project-desc">A fully responsive product landing page with a clean layout, product cards, cart UI, and smooth hover interactions.</div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb p-c2">🌦️</div>
+      <div class="project-body">
+        <span class="project-status completed">Completed</span>
+        <div class="project-tags"><span class="ptag">JavaScript</span><span class="ptag">API</span><span class="ptag">CSS</span></div>
+        <div class="project-title">Weather App</div>
+        <div class="project-desc">A dynamic weather application that fetches real-time data, displays current conditions with beautiful animated UI.</div>
+        <a href="#" class="project-link">View Project →</a>
+      </div>
+    </div>
+    <div class="project-card reveal">
+      <div class="project-thumb p-c3">✅</div>
+      <div class="project-body">
+        <span class="project-status in-progress">In Progress</span>
+        <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div>
+        <div class="project-title">Task Manager App</div>
+        <div class="project-desc">A clean to-do list app with add, delete, complete features and local storage to save tasks between sessions. Currently in development.</div>
+        <a href="#" class="project-link disabled">Coming Soon</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="reveal">
+    <span class="section-label">Let's Talk</span>
+    <h2 class="section-title">Contact Me</h2>
+    <div class="section-line"></div>
+  </div>
+  <div class="contact-wrap">
+    <div class="contact-info reveal">
+      <p>I'm open to freelance projects, collaborations, and opportunities. If you have an idea you want to bring to life, let's make it happen together.</p>
+      <div class="contact-links">
+        <a href="mailto:behttytamrat@gmail.com" class="contact-link">
+          <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--gray2);margin-bottom:2px;">Email</div>
+            behttytamrat@gmail.com
+          </div>
+        </a>
+        <a href="https://t.me/behttytamrat" class="contact-link">
+          <div class="contact-link-icon"><i class="fab fa-telegram"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--gray2);margin-bottom:2px;">Telegram</div>
+            t.me/behttytamrat
+          </div>
+        </a>
+        <a href="https://github.com/bethelhem1-devp" class="contact-link">
+          <div class="contact-link-icon"><i class="fab fa-github"></i></div>
+          <div>
+            <div style="font-size:12px;color:var(--gray2);margin-bottom:2px;">GitHub</div>
+            github.com/bethelhem1-devp
+          </div>
+        </a>
+      </div>
+    </div><form action="mailto:behttytamrat@gmail.com" method="post" enctype="text/plain">
+    <div class="contact-form reveal">
+      <div class="form-group">
+        <label>Your Name</label>
+        <input type="text" placeholder="Enter name">
+      </div>
+      <div class="form-group">
+        <label>Email Address</label>
+        <input type="email" placeholder="Email">
+      </div>
+      <div class="form-group">
+        <label>Message</label>
+        <textarea rows="5" placeholder="Tell me about your project..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;border-radius:10px;padding:16px;" onclick="handleSend()" type="submit">Send Message</button>
+    </div></form>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <p>© 2026 <span>Bethelhem Tamirat</span>. All rights reserved.</p>
+</footer>
+
+
+</body>
+</html>
