@@ -210,13 +210,6 @@
     animation: fadeUp 0.8s ease 0.65s both;
   }
   .hero-role span { color: var(--white); }
-  /*.hero-desc {
-    font-size: 20px; line-height: 1.75;
-    color: var(--gray); max-width: 520px;
-    margin-bottom: 40px;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.8s both;
-  }*/
   .hero-btns {
     display: flex; gap: 16px; flex-wrap: wrap;
     opacity: 0;
@@ -263,9 +256,9 @@
     z-index: 0;
     
   }
-  .hero-overlay {
+ .hero-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(100deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.88) 35%, rgba(13,13,13,0.55) 65%, rgba(13,13,13,0.35) 100%);
+    background: linear-gradient(100deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.5) 35%, rgba(13,13,13,0.55) 65%, rgba(13,13,13,0.3) 100%);
     z-index: 1;
   }
   @keyframes fadeLeft {
@@ -399,6 +392,28 @@
     .nav-overlay { display: block; }
 
     nav { padding: 16px 20px; }
+     .hero-overlay{position: absolute; inset: 0;
+    background: linear-gradient(100deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.5) 35%, rgba(13,13,13,0.55) 65%, rgba(13,13,13,0.3) 100%);
+    z-index: 1;}
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    padding: 2rem 1.5rem;
+    box-sizing: border-box;
+  }
+
+  /* Keeps "Available for work" at the top */
+  .hero-tag {
+    align-self: flex-start;
+  }
+
+  /* Pushes h1 and everything below it down to the bottom */
+  .hero-content > h1 {
+    margin-top: auto;
+    font-size: 2.2rem;
+    line-height: 1.2;
+  }
 
     .nav-links {
       position: fixed;
@@ -441,9 +456,7 @@
       align-items: stretch;
       gap: 32px;
     }
-    .hero-overlay {
-      background: linear-gradient(180deg, rgba(13,13,13,0.92) 0%, rgba(13,13,13,0.88) 100%);
-    }
+   
     section { padding: 60px 20px; }
 
     /* Hero text sizing */
@@ -463,4 +476,13 @@
     .btn-primary, .btn-outline { text-align: center; }
     .hero-stats { gap: 20px; }
     .stat-num { font-size: 26px; }
+     .hero-overlay{position: absolute; inset: 0;
+    background: linear-gradient(100deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.6) 35%, rgba(13,13,13,0.55) 65%, rgba(13,13,13,0.35) 100%);
+    z-index: 1;}
+     .hero-content {
+    padding: 1.25rem 1rem;
+  }
+  .hero-content > h1 {
+    font-size: 1.8rem;
+  }
   }
