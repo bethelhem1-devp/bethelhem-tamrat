@@ -94,3 +94,21 @@ window.addEventListener('DOMContentLoaded', () => {
       a.style.color = a.getAttribute('href') === '#' + current ? 'var(--pink)' : '';
     });
   });
+
+//hero-word
+document.addEventListener('DOMContentLoaded', () => {
+  new Typed('#typed-text', {
+    // Sequence order: 1st phrase, then 2nd phrase
+    strings: [
+      'Interactive Web Developer', 
+      'UI Designer'
+    ],
+    typeSpeed: 90,       // Speed of typing each character
+    backSpeed: 95,       // Speed of erasing text
+    backDelay: 100,     // Holds the text for 2 seconds before erasing
+    startDelay: 200,     // Brief pause before starting the 1st phrase
+    loop: true,          // Loops continuously (1st -> 2nd -> 1st...)
+    showCursor: true,
+    cursorChar: '|'      // Blinking cursor symbol
+  });
+});
