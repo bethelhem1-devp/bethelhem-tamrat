@@ -77,12 +77,12 @@ window.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('#home').forEach(el => countObserver.observe(el));
 
   // ── Send message ──
-  function handleSend() {
-    const btn = document.querySelector('#contact .btn-primary');
-    btn.textContent = '✓ Message Sent!';
-    btn.style.background = '#10b981';
-    setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
-  }
+  // function handleSend() {
+  //   const btn = document.querySelector('#contact .btn-primary');
+  //   btn.textContent = '✓ Message Sent!';
+  //   btn.style.background = '#10b981';
+  //   setTimeout(() => { btn.textContent = 'Send Message'; btn.style.background = ''; }, 3000);
+  // }
 
   // ── Nav active state ──
   const sections = document.querySelectorAll('section[id]');
@@ -96,19 +96,44 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
 //hero-word
-document.addEventListener('DOMContentLoaded', () => {
-  new Typed('#typed-text', {
-    // Sequence order: 1st phrase, then 2nd phrase
-    strings: [
-      'Interactive Web Developer', 
-      'UI Designer'
-    ],
-    typeSpeed: 90,       // Speed of typing each character
-    backSpeed: 95,       // Speed of erasing text
-    backDelay: 100,     // Holds the text for 2 seconds before erasing
-    startDelay: 200,     // Brief pause before starting the 1st phrase
-    loop: true,          // Loops continuously (1st -> 2nd -> 1st...)
-    showCursor: true,
-    cursorChar: '|'      // Blinking cursor symbol
-  });
-});
+const words = [
+    "Student.",
+    "Developer.",
+    "Creator."
+];
+
+const typingElement = document.getElementById("typing");
+
+let wordIndex = 0;
+let charIndex = 0;
+let deleting = false;
+
+function typeEffect() {
+
+    const currentWord = words[wordIndex];
+
+    if (!deleting) {
+        typingElement.textContent = currentWord.substring(0, charIndex + 1);
+        charIndex++;
+
+        if (charIndex === currentWord.length) {
+            deleting = true;
+            setTimeout(typeEffect, 1200);
+            return;
+        }
+
+    } else {
+        typingElement.textContent = currentWord.substring(0, charIndex - 1);
+        charIndex--;
+
+        if (charIndex === 0) {
+            deleting = false;
+            wordIndex = (wordIndex + 1) % words.length;
+        }
+    }
+
+    setTimeout(typeEffect, deleting ? 60 : 120);
+}
+
+typeEffect();
+

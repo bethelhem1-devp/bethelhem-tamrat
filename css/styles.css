@@ -209,15 +209,33 @@
     animation: fadeUp 0.8s ease 0.5s both;
   }
   h1 .pink { color: var(--pink); }
-  .hero-role {
-    font-family: 'Syne', sans-serif;
-    font-size: clamp(20px, 3.5vw, 26px);
-    color: var(--pink);
-    margin-bottom: 24px;
-    opacity: 0;
-    animation: fadeUp 0.8s ease 0.65s both;
-  }
-  .hero-role span { color: var(--white); }
+
+  .hero-role span { color: var(--white); } */
+
+  /* hero title */
+.hero-title{
+    font-size: 2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#typing{
+  font-size: 2.5rem;
+}
+
+.cursor{
+    color: #f59e0b;
+    animation: blink .8s infinite;
+}
+
+@keyframes blink{
+    50%{
+        opacity:0;
+    }
+}
+
+
+
   .hero-btns {
     display: flex; gap: 16px; flex-wrap: wrap;
     opacity: 0;
@@ -258,7 +276,7 @@
   /* Hero image  */
   .hero-bg-image {
     position: fixed; inset: 0;
-    background-image: url('../assets/my-hirpic.jpg');
+    background-image: url('../assets/githubb.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -353,8 +371,8 @@
   /* PROJECTS */
   #projects { background: var(--black2); }
   .projects-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 24px; }
-  .project-card { background: var(--black3); border: 1px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden; transition: transform 0.3s, border-color 0.3s, box-shadow 0.3s; }
-  .project-card:hover { transform: translateY(-6px); border-color: rgba(255,77,141,0.3); box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
+  .project-card { background: var(--black); border: 2px solid rgba(255,255,255,0.06); border-radius: 20px; overflow: hidden; transition: transform 0.3s, border-color, box-shadow 0.3s; border-bottom-color: rgba(177, 143, 6, 0.953);}
+  .project-card:hover { transform: translateY(-6px);  box-shadow: 0 20px 50px rgba(0,0,0,0.5); }
   .project-thumb {
     height: 220px;
     display: flex;
@@ -533,7 +551,7 @@
     font-size: 2.2rem;
     line-height: 1.2;
   }
-.hero-bg-image { background-image:url(../assets/my-hirpic.jpg); position: fixed;}
+.hero-bg-image { background-image:url(../assets/cnv-black.jpg); position: fixed;}
     .nav-links {
       position: fixed;
       top: 0; right: -100%;
@@ -594,6 +612,7 @@
 
   @media (max-width: 480px) {
     #home{min-height: 60vh;}
+    
      .hero-bg{ background: var(--black3); z-index: 0; }
     .hero-bg-image { background-image:url(../assets/cnv-black.jpg);  border-radius: 12% 2% 4% 38%; background-size:cover; background-position:center; background-repeat:no-repeat; min-height:70vh; position: absolute; z-index: 1;}
     .hero-btns { flex-direction: column; }
@@ -603,8 +622,9 @@
     .stat-num { font-size: 26px; }
       .hero-overlay {
     position: absolute; inset: 0;
-    background: linear-gradient(30deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.5) 15%, rgba(13,13,13,0.55) 10%, rgba(13,13,13,0.5) 100%);
+    background: linear-gradient(30deg, rgba(13,13,13,0.95) 0%, rgba(13,13,13,0.1) 100%, rgba(13,13,13,0.3) 100%, rgba(13,13,13,0.5) 10%);
       z-index: 2;
+      
   }
      .hero-content {
     padding: 1.25rem 1rem;

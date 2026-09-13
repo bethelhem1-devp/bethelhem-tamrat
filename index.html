@@ -3,12 +3,15 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Bethelhem Tamirat Web Designer-Developer</title>
+<title>Bethelhem Tamirat - Developer | Student</title>
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230D0D0D'/><text x='50%' y='55%' dominant-baseline='central' text-anchor='middle' font-family='Arial, sans-serif' font-weight='900' font-size='65' fill='%23FF9900'>B</text></svg>">
 <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 <link rel="stylesheet" href="css/styles.css">
+
 <script src="js/script.js" defer></script>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js" defer></script>
+<script src="js/email.js" defer></script>
 </head>
 <body>
 
@@ -50,12 +53,14 @@
   <div class="grid-bg"></div>
   <div class="hero-content">
     <div class="hero-tag">Available for work</div>
-    <h1>Hey, I'm<br><span class="pink">Bethelhem</span></h1>
-    <div class="hero-role"><span id="typed-text"></span></div>
+    <h1>Hey, I'm<br><span class="pink">Bethelhem</span></h1> <br>
+   <h2 class="hero-title">
+    <span id="typing"></span><span class="cursor">|</span>
+</h2> <br>
     
     <div class="hero-btns">
       <a href="#projects" class="btn-primary">View My Work</a>
-      <a href="#contact" class="btn-outline">Hire Me</a>
+      <a href="#contact" class="btn-outline">Contact</a>
     </div>
     <div class="hero-stats">
       <div>
@@ -83,8 +88,8 @@
   </div>
   <div class="about-grid">
     <div class="about-text reveal">
-      <p>I'm <strong>Bethelhem Tamirat</strong>, an aspiring Full-Stack Developer. With a strong foundation in front‑end design and growing expertise in back‑end.</p>
-      <p>I help local businesses, hotels, e-commerce brands, and individuals build fast and professional websites.</p>
+      <p>I'm <strong>Bethelhem Tamirat</strong>, an aspiring Full-Stack Developer with a strong foundation in front-end development and experience building applications with BaaS.</p>
+      <p>currently expanding my back-end development skills while building modern and responsive websites for businesses and individuals.</p>
       <div class="about-tags">
         <span class="tag">Problem Solver</span>
         <span class="tag">Fast Learner</span>
@@ -177,32 +182,32 @@
         <span class="project-status completed">Completed</span>
         <div class="project-tags"><span class="ptag">Firebase firestore</span><span class="ptag">JS</span><span class="ptag">CSS</span><span class="ptag">HTML</span><span class="ptag">Telegram mini app</span></div>
         <div class="project-title">Campus Connect</div>
-        <div class="project-desc">A Lost & Found platform for campus communities. Students can post lost or found items with descriptions and optional photos, search listings, and contact the owner or finder to help return belongings</div>
-        <a href="https://campusconnect-hub.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a> <br> <br>
+        <div class="project-desc">A Lost & Found platform for campus communities. Students can post lost or found items with descriptions and optional photos, then contact the owner or finder to help return belongings </div>
+        <a href="https://campusconnect-hub.netlify.app" class="project-link" target="_blank" rel="noopener noreferrer">Visit →</a> <br> <br>
         <a href="https://github.com/bethelhem1-devp/campusconnect" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
       </div>
     </div>
     <div class="project-card reveal">
-      <a href="https://hera-addishotel.vercel.app"  target="_blank" rel="noopener noreferrer"><div class="project-thumb p-c2"><img class="project-image" src="assets/hotel-webst.png" alt="Modern and Resposive website for Hotel"></div></a>
+      <a href="https://hera-addishotel.vercel.app"  target="_blank" rel="noopener noreferrer"><div class="project-thumb p-c2"><img class="project-image" src="assets/hotel-webstt.jpg" alt="Modern and Resposive website for Hotel"></div></a>
       <div class="project-body">
         <span class="project-status completed">Completed</span>
         <div class="project-tags"><span class="ptag">JavaScript</span><span class="ptag">CSS3</span><span class="ptag">HTML5</span></div>
         <div class="project-title">Hera Addis Hotel</div>
         <div class="project-desc">A modern website developed for a hotel showcase. Features include an interactive image gallery, clean room detail layouts, and a responsive design</div>
-        <a href="https://hera-addishotel.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a> <br> <br>
+        <a href="https://hera-addishotel.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">Visit →</a> <br> <br>
         <a href="https://github.com/bethelhem1-devp/hera-addishotel" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
       </div>
     </div>
 
     <div class="project-card reveal">
-      <a href="#"  target="_blank" rel="noopener noreferrer"><div class="project-thumb p-c3"><img class="project-image" src="assets/kebirs.png" alt="Ecommerce Website for cloths"></div></a>
+      <a href="https://kebirstore.vercel.app"  target="_blank" rel="noopener noreferrer"><div class="project-thumb p-c3"><img class="project-image" src="assets/ecmr-suit.png" alt="Ecommerce Website for cloths"></div></a>
       <div class="project-body">
         <span class="project-status completed">Completed</span>
         <div class="project-tags"><span class="ptag">JavaScript</span><span class="ptag">CSS3</span><span class="ptag">HTML5</span></div>
         <div class="project-title">Kebir's E-commerce</div>
-        <div class="project-desc">Web platform designed for seamless online shopping, featuring product catalog filtering, an interactive shopping cart, and a responsive checkout workflow</div>
-        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">View Project →</a> <br> <br>
-        <a href="#" class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
+        <div class="project-desc">Web platform for online shopping, featuring product catalog filtering, an interactive shopping cart, and a responsive checkout workflow</div>
+        <a href="https://kebirstore.vercel.app" class="project-link" target="_blank" rel="noopener noreferrer">Visit →</a> <br> <br>
+        <a href="https://github.com/bethelhem1-devp/E-commerce-Website1 " class="project-link" target="_blank" rel="noopener noreferrer">GitHub →</a>
       </div>
     </div>
 
@@ -211,7 +216,7 @@
       <div class="project-body">
         <span class="project-status in-progress">In Progress</span>
         <!-- <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">JS</span></div> -->
-        <div class="project-title">Real State Website</div>
+        <div class="project-title">Real Estate Website</div>
         <div class="project-desc">A modern real estate website currently in development, featuring responsive layouts, property listings, and an intuitive user experience.</div>
         <a href="#" class="project-link disabled">Coming Soon</a>
       </div>
@@ -293,7 +298,7 @@
   </div>
   <div class="contact-wrap">
     <div class="contact-info reveal">
-      <p>I'm open to freelance projects, collaborations, and opportunities. If you have an idea you want to bring to life, let's make it happen together.</p>
+      <p>I'm open to freelance projects and collaborations. If you have an idea you want to bring to life, let's make it happen together.</p>
       <div class="contact-links">
         <a href="mailto:behttytamrat@gmail.com" class="contact-link">
           <div class="contact-link-icon"><i class="fas fa-envelope"></i></div>
@@ -317,7 +322,9 @@
           </div>
         </a>
       </div>
-    </div><form action="mailto:behttytamrat@gmail.com" method="post" enctype="text/plain">
+    </div>
+    
+    <!-- <form action="mailto:behttytamrat@gmail.com" method="post" enctype="text/plain">
     <div class="contact-form reveal">
       <div class="form-group">
         <label>Your Name</label>
@@ -332,7 +339,47 @@
         <textarea rows="5" placeholder="Tell me about your project..."></textarea>
       </div>
       <button class="btn-primary" style="width:100%;border-radius:10px;padding:16px;" onclick="handleSend()" type="submit">Send Message</button>
-    </div></form>
+    </div></form> -->
+
+    <form id="contact-form">
+  <div class="contact-form reveal">
+
+    <div class="form-group">
+      <label>Your Name</label>
+      <input
+        type="text"
+        name="from_name"
+        placeholder="Enter name"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label>Email Address</label>
+      <input
+        type="email"
+        name="from_email"
+        placeholder="Email"
+        required>
+    </div>
+
+    <div class="form-group">
+      <label>Message</label>
+      <textarea
+        name="message"
+        rows="5"
+        placeholder="Tell me about your project..."
+        required></textarea>
+    </div>
+
+    <button
+      class="btn-primary"
+      style="width:100%;border-radius:10px;padding:16px;"
+      type="submit">
+      Send Message
+    </button>
+
+  </div>
+</form>
   </div>
 </section>
 
