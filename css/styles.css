@@ -434,11 +434,12 @@
     border-radius:18px;
     padding:35px 28px;
     transition:.35s ease;
+     border-color:#f59e0b;
 }
 
 .work-card:hover{
     transform:translateY(-8px);
-    border-color:#f59e0b;
+   
     box-shadow:0 15px 35px rgba(245,158,11,.18);
 }
 
@@ -551,7 +552,7 @@
     font-size: 2.2rem;
     line-height: 1.2;
   }
-.hero-bg-image { background-image:url(../assets/cnv-black.jpg); position: fixed;}
+.hero-bg-image { background-image:url(../assets/githubb.jpg); position: fixed;}
     .nav-links {
       position: fixed;
       top: 0; right: -100%;
