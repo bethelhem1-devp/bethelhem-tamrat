@@ -1,11 +1,7 @@
-window.addEventListener('DOMContentLoaded', () => {
-  // Show intro for 2.5 seconds (2500 milliseconds) then fade out
-  setTimeout(() => {
-    const introScreen = document.getElementById('intro-screen');
-    if (introScreen) {
-      introScreen.classList.add('fade-out');
-    }
-  }, 2500); 
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        document.getElementById("intro-screen").classList.add("fade-out");
+    }, 2500);
 });
 // ── Mobile menu ──
   const menuBtn = document.getElementById('menuBtn');
